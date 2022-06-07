@@ -14,22 +14,24 @@ yum install --enablerepo="epel" ufw -y
 
 apt-get install ufw
 
-Activación del firewall (opcional)
+## Activación del firewall (opcional)
 
 Si al ejecutar ufw status aparece el mensaje Status: inactive, significa que el firewall aún no está habilitado en el sistema. Tendrás que ejecutar un comando para habilitarlo.
 ufw enable
 
-Desactivar el firewall (opcional)
+## Desactivar el firewall (opcional)
 
 ufw disable
 
-Verificar el estado del firewall (opcional)
+## Verificar el estado del firewall (opcional)
 
 Para ver lo que está actualmente bloqueado o permitido, puede utilizar el parámetro verbose cuando ejecute ufw status, como sigue:
+
 ufw status
 
 NOTA: Por defecto, cuando se activa UFW se bloquea el acceso externo a todos los puertos de un servidor. En la práctica, eso significa que, si estás conectado a un servidor a través de SSH y habilitas ufw antes de permitir el acceso a través del puerto SSH, será desconectado. Asegúrese de seguir las instrucciones de cómo habilitar el acceso SSH de esta guía antes de habilitar el firewall si ese es tu caso.
-Eliminar una regla UFW (opcional)
+
+### Eliminar una regla UFW (opcional)
 Para eliminar una regla previamente configurada en UFW, utilice ufw delete seguido de la regla (allow o deny) y la especificación de destino. El siguiente ejemplo eliminaría una regla previamente configurada para permitir todas las conexiones desde una dirección IP de 203.0.113.101:
 ufw delete allow from 203.0.113.101
 
