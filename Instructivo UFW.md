@@ -9,9 +9,9 @@ UFW funciona permitiéndole configurar reglas que
 
 ## Instalación y configuración del firewall (opcional)
 
-´´´´bash
+
 yum install epel-release -y
-´´´´
+
 
 yum install --enablerepo="epel" ufw -y
 
