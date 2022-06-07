@@ -1,4 +1,4 @@
-# Firewall UFW para sistemas operativos Ubuntu y CentOS
+# Firewall UFW para Sistemas Operativos Ubuntu y CentOS
 
 El kernel de Linux proporciona capacidades para supervisar y controlar el tráfico de la red. Estas capacidades se exponen al usuario final a través de las utilidades del cortafuego. En Linux, el cortafuego más común es iptables. Sin embargo, iptables es bastante complicado y confuso por lo que decidimos emplear UFW. Piensa en UFW como un front-end para iptables. Simplifica el proceso de gestión de las reglas de iptables que le dicen al kernel de Linux qué hacer con el tráfico de red.
 
